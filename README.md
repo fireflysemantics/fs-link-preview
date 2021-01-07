@@ -1,49 +1,41 @@
-# fs-gist
+# fs-image
 
-Web component for embedding gists in html content
+Web component for embedding background rendered images in html content.
 
 ## Installation
 
-`npm i @fireflysemantics/fs-gist`
+`npm i @fireflysemantics/fs-image`
 
 ## Usage
 
-Include `fs-gist` via CDN like this in your html page:
+Include `fs-image` via CDN like this in your html page:
 
 ```
-<script src="https://unpkg.com/@fireflysemantics/fs-gist"></script>
+<script src="https://unpkg.com/@fireflysemantics/fs-image"></script>
+```
+  <fs-image height="10rem;" scale="50%" url="https://fireflysemantics.github.io/i/404/crash-5435071_1920.png">
+  </fs-image>
 ```
 
-To show this gist url:
-
-`https://gist.github.com/fireflysemantics/054716730103cd205c39167054542f68` 
-
-
-configure the component `gistID` like this:
-
-```
-<body style="height: 100vh;">
-  <fs-gist gistID="fireflysemantics/054716730103cd205c39167054542f68">
-  </fs-gist>
-</body>
-```
-
-Note that we set the `height` of the body to `100vh` in order to allow
-`fs-gist` to expand.
-
-A height property is also supported.  For example:
-
-```
-<body style="height: 100vh;">
-  <fs-gist height="10rem" gistID="fireflysemantics/054716730103cd205c39167054542f68">
-  </fs-gist>
-</body>
-
-```
-
-[Stackblitz Demo](https://stackblitz.com/edit/typescript-fs-gist-set-body-height-demo?file=index.html)
+[Stackblitz Demo](https://stackblitz.com/edit/typescript-fs-image?file=index.html)
 
 ## Development
+
+## Design
+
+The image is rendered with this CSS:
+
+```
+  static styles = css`
+    :host {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;    
+    }
+  `;
+
+```
 
 ### Baseline
 

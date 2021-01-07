@@ -8,18 +8,21 @@ import { LitElement } from 'lit-element';
 /**
  * An element for including github gists in html documents.
  */
-export declare class FSGistElement extends LitElement {
+export declare class FSImageElement extends LitElement {
     static styles: import("lit-element").CSSResult;
+    scale: string;
     /**
-     * The name to say "Hello" to.
+     * The width of the image.
      */
-    gistID: string;
+    width: string;
+    /**
+     * The height of the image
+     */
     height: string;
     /**
-     * Select a file within a multi file gist.
-     * https://stackoverflow.com/questions/14206307/how-do-i-embed-a-single-file-from-a-github-gist-with-the-new-gist-interface
+     * THe image URL
      */
-    file: string;
+    url: string;
     iframe: HTMLIFrameElement;
     firstUpdated(): void;
     constructor();
@@ -27,7 +30,7 @@ export declare class FSGistElement extends LitElement {
 }
 declare global {
     interface HTMLElementTagNameMap {
-        'fs-gist': FSGistElement;
+        'fs-image': FSImageElement;
     }
 }
-//# sourceMappingURL=fs-gist.d.ts.map
+//# sourceMappingURL=fs-image.d.ts.map

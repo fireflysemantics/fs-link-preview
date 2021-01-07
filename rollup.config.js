@@ -33,9 +33,9 @@ import filesize from 'rollup-plugin-filesize';
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-  input: 'fs-gist.js',
+  input: 'fs-image.js',
   output: {
-    file: 'fs-gist.bundle.js',
+    file: 'fs-image.bundle.js',
     format: 'iife', // immediately-invoked function expression — suitable for <script> tags
     sourcemap: true,
   },
