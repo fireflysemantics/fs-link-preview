@@ -1,41 +1,31 @@
-# fs-image
+# fs-link-preview
 
-Web component for embedding background rendered images in html content.
+Web component for rendering link-previews in html content.
 
 ## Installation
 
-`npm i @fireflysemantics/fs-image`
+`npm i @fireflysemantics/fs-link-preview`
+
+## CDN 
+
+<script src="https://unpkg.com/@fireflysemantics/fs-link-preview"></script>
 
 ## Usage
 
-Include `fs-image` via CDN like this in your html page:
+Include `fs-link-preview` via CDN like this in your html page:
 
 ```
-<script src="https://unpkg.com/@fireflysemantics/fs-image"></script>
-```
-  <fs-image height="10rem;" scale="50%" url="https://fireflysemantics.github.io/i/404/crash-5435071_1920.png">
-  </fs-image>
+<fs-link-preview imageURL="https://raw.githubusercontent.com/fireflysemantics/slice/master/logoslicelogo.png"
+  title="@fireflysemantics/slice"
+  description="Lightweight Web Application State Management"
+  domain="www.npmjs.com"
+  url="https://help-service-parts.fireflysemantics.com/guidesguides--fixed-parameter-optimization-guide">
+</fs-link-preview>
 ```
 
-[Stackblitz Demo](https://stackblitz.com/edit/typescript-fs-image?file=index.html)
+[Stackblitz Demo](https://stackblitz.com/edit/typescript-fs-link-preview)
 
 ## Development
-
-## Design
-
-The image is rendered with this CSS:
-
-```
-  static styles = css`
-    :host {
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;    
-    }
-  `;
-
-```
 
 ### Baseline
 

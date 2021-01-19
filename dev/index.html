@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <title>&lt;fs-gist> Demo</title>
   <script type="module"
-    src="../fs-image.js"></script>
+    src="../fs-link-preview.js"></script>
   <style>
     p {
       border: solid 1px blue;
@@ -17,22 +17,19 @@
 </head>
 
 <body style="height: 100vh; max-width: 50rem; margin: 0 auto">
-  <fs-image url="https://fireflysemantics.github.io/i/404/crash-5435071_1920.png">
-  </fs-image>
-  <br>
-  <br>
-  <fs-image scale="50%" url="https://fireflysemantics.github.io/i/404/crash-5435071_1920.png">
-  </fs-image>
-  <br>
-  <br>
-  <fs-image height="10rem;" url="https://fireflysemantics.github.io/i/404/crash-5435071_1920.png">
-  </fs-image>
-  <br>
-  <br>
-  <fs-image height="10rem;" scale="50%" url="https://fireflysemantics.github.io/i/404/crash-5435071_1920.png">
-  </fs-image>
-  <br>
-  <br>
-  <br>
+  <fs-link-preview imageURL="https://raw.githubusercontent.com/fireflysemantics/slice/master/logo/slicelogo.png"
+    title="@fireflysemantics/slice"
+    description="Lightweight Web Application State Management"
+    domain="www.npmjs.com"
+    url="https://www.npmjs.com/package/@fireflysemantics/slice">
+  </fs-link-preview>
+
+
+  <fs-link-preview imageURL="https://static.npmjs.com/7a7ffabbd910fc60161bc04f2cee4160.png"
+    title="@fireflysemantics/slice"
+    description="Lightweight Web Application State Management"
+    domain="www.npmjs.com"
+    url="https://www.npmjs.com/package/@fireflysemantics/slice">
+  </fs-link-preview>
 </body>
 </html>

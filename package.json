@@ -1,10 +1,10 @@
 {
-  "name": "@fireflysemantics/fs-image",
-  "version": "1.0.1",
-  "description": "A web component for rendering background images in html content",
-  "main": "fs-image.bundle.js",
-  "module": "fs-image.js",
-  "types": "fs-image.d.ts",
+  "name": "@fireflysemantics/fs-link-preview",
+  "version": "1.0.8",
+  "description": "A web component for creating previews of html page content",
+  "main": "fs-link-preview.bundle.js",
+  "module": "fs-link-preview.js",
+  "types": "fs-link-preview.d.ts",
   "type": "module",
   "scripts": {
     "ig": "npm install -g @jsdevtools/version-bump-prompt && npm install -g npm-check-updates && npm install -g npm-install-peers",
@@ -12,7 +12,7 @@
     "rollup": "rollup -c",
     "build": "npm run clean && tsc && npm run rollup",
     "build:watch": "tsc --watch",
-    "clean": "rimraf fs-image.{d.ts,d.ts.map,js,js.map,bundle.js,bundle.js.map} test/fs-image.{d.ts,d.ts.map,js,js.map} test/fs-image_test.{d.ts,d.ts.map,js,js.map}",
+    "clean": "rimraf fs-link-preview.{d.ts,d.ts.map,js,js.map,bundle.js,bundle.js.map} test/fs-link-preview.{d.ts,d.ts.map,js,js.map} test/fs-link-preview_test.{d.ts,d.ts.map,js,js.map}",
     "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
     "lint:eslint": "eslint 'src/**/*.ts'",
     "lint:lit-analyzer": "lit-analyzer",
@@ -21,7 +21,7 @@
     "docs:clean": "rimraf docs",
     "docs:gen": "eleventy --config=.eleventy.cjs",
     "docs:gen:watch": "eleventy --config=.eleventy.cjs --watch",
-    "docs:build": "rollup -c --file docs/fs-image.bundled.js",
+    "docs:build": "rollup -c --file docs/fs-link-preview.bundled.js",
     "docs:assets": "cp node_modules/prismjs/themes/prism-okaidia.css docs/",
     "docs:serve": "es-dev-server --root-dir=docs --node-resolve --watch",
     "analyze": "wca analyze \"src/**/*.ts\" --outFile custom-elements.json",
@@ -30,12 +30,14 @@
     "test:watch": "karma start karma.conf.cjs --auto-watch=true --single-run=false",
     "test:update-snapshots": "karma start karma.conf.cjs --update-snapshots",
     "test:prune-snapshots": "karma start karma.conf.cjs --prune-snapshots",
-    "checksize": "rollup -c ; cat fs-image.bundled.js | gzip -9 | wc -c ; rm fs-image.bundled.js"
+    "checksize": "rollup -c ; cat fs-link-preview.bundled.js | gzip -9 | wc -c ; rm fs-link-preview.bundled.js"
   },
   "keywords": [
     "web-components",
     "lit-element",
-    "typescript"
+    "typescript",
+    "link",
+    "preview"
   ],
   "author": "Ole Ersoy",
   "license": "MIT",
