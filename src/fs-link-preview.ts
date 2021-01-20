@@ -277,6 +277,7 @@ export class FSLinkPreviewElement extends LitElement {
 
         .LinkPreviewMeta_title {
             font-family: biorhyme;
+            line-height:26px;
             font-weight: bold;
             font-size: 22px;
         }

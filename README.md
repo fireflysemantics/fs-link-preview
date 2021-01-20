@@ -19,7 +19,7 @@ Include `fs-link-preview` via CDN like this in your html page:
   title="@fireflysemantics/slice"
   description="Lightweight Web Application State Management"
   domain="www.npmjs.com"
-  url="https://help-service-parts.fireflysemantics.com/guidesguides--fixed-parameter-optimization-guide">
+  url="">
 </fs-link-preview>
 ```
 

@@ -1,6 +1,6 @@
 {
   "name": "@fireflysemantics/fs-link-preview",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A web component for creating previews of html page content",
   "main": "fs-link-preview.bundle.js",
   "module": "fs-link-preview.js",
@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "ig": "npm install -g @jsdevtools/version-bump-prompt && npm install -g npm-check-updates && npm install -g npm-install-peers",
-    "pub": "bump patch && npm run build && npm publish",
+    "p": "bump patch && npm run build && npm publish",
     "rollup": "rollup -c",
     "build": "npm run clean && tsc && npm run rollup",
     "build:watch": "tsc --watch",

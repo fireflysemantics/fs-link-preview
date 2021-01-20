@@ -411,6 +411,7 @@ const Z=(t,o)=>"method"===o.kind&&o.descriptor&&!("value"in o.descriptor)?Object
 
         .LinkPreviewMeta_title {
             font-family: biorhyme;
+            line-height:26px;
             font-weight: bold;
             font-size: 22px;
         }

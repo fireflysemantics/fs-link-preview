@@ -280,6 +280,7 @@ FSLinkPreviewElement.styles = css `
 
         .LinkPreviewMeta_title {
             font-family: biorhyme;
+            line-height:26px;
             font-weight: bold;
             font-size: 22px;
         }
