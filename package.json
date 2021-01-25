@@ -1,6 +1,6 @@
 {
   "name": "@fireflysemantics/fs-link-preview",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A web component for creating previews of html page content",
   "main": "fs-link-preview.bundle.js",
   "module": "fs-link-preview.js",
