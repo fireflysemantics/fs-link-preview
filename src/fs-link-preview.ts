@@ -144,7 +144,7 @@ export class FSLinkPreviewElement extends LitElement {
 
   render() {
     return html`
-<a href="${this.url}">
+<a href="${this.url}" target="_blank">
   <section class="LinkPreviewMeta">
     <div class="LinkPreviewMeta_title">${this.title}</div>
     <div class="LinkPreviewMeta_description">${this.description}</div>
