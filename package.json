@@ -1,6 +1,13 @@
 {
   "name": "@fireflysemantics/fs-link-preview",
-  "version": "1.0.12",
+  "bugs": {
+    "url": "https://github.com/fireflysemantics/fs-link-preview/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fireflysemantics/fs-link-preview"
+  },
+  "version": "1.0.14",
   "description": "A web component for creating previews of html page content",
   "main": "fs-link-preview.bundle.js",
   "module": "fs-link-preview.js",

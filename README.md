@@ -8,11 +8,13 @@ Web component for rendering link-previews in html content.
 
 ## CDN 
 
+Include `fs-link-preview` via CDN like this in the head tag of your html page:
+
 <script src="https://unpkg.com/@fireflysemantics/fs-link-preview"></script>
 
 ## Usage
 
-Include `fs-link-preview` via CDN like this in your html page:
+[Creating Link Previews With the Firefly Semantics fs-link-preview Web Component](https://developer.fireflysemantics.com/tasks/tasks--web-component--creating-link-previews-with-the-fs-link-preview-web-component)
 
 ```
 <fs-link-preview imageURL="https://raw.githubusercontent.com/fireflysemantics/slice/master/logoslicelogo.png"
