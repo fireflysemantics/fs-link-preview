@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/fireflysemantics/fs-link-preview"
   },
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A web component for creating previews of html page content",
   "main": "fs-link-preview.bundle.js",
   "module": "fs-link-preview.js",
