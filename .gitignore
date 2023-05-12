@@ -2,8 +2,12 @@
 /lib/
 /test/
 
+# CSS PROJECT
+fs-link-preview-css/node_modules
+
 # top level source
 my-element.js
 my-element.js.map
 my-element.d.ts
 my-element.d.ts.map
+
